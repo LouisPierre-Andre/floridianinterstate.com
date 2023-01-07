@@ -1,0 +1,682 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    color: white;
+    /* background-color: rgb(0, 0, 0); */
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 999999;
+    /* transition: 1s; */
+}
+
+.Logo-img {
+    width: 110px;
+    cursor: default;
+}
+
+
+
+
+header .logo-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .logo-box span {
+    color: orangered;
+}
+
+header .logo {
+    cursor: default;
+}
+
+header .logo-box h2 {
+    margin: 0;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    margin: 0px 2vw;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header ul li:hover {
+    color: orangered;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+header ul li a:hover {
+    color: orangered;
+}
+
+
+header .menu {
+    display: none;
+    color: black;
+}
+
+
+@media (max-width: 600px) {
+    header {
+       display: flex;
+       flex-direction: column;
+       /* margin-top: 100px; */
+
+    }
+
+    header ul {
+        margin: 0;
+        display: none;
+    }
+
+    header .logo-box {
+        width: 100%;
+        justify-content: space-around;
+        padding: 5px 0px;
+        
+        align-items: center;
+    }
+
+    header .menu {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: .15s;
+    }
+
+    header .menu:hover {
+        color: orangered;
+    }
+
+    header.active ul{
+        display: block;
+    }
+
+    header.active {
+        height: 100vh;
+        justify-content: start;
+        transition: 1s;
+    }
+
+    header.active ul li {
+        margin: 40px 0px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+#join {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(173, 216, 230, 0.479);
+
+}
+
+#join .container {
+    width: 40%;
+    margin-top: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.527);
+    padding: 5%;
+    background-color: white;
+    /* background-color: rgba(173, 216, 230, 0.479); */
+
+}
+
+#join h1 {
+    font-size: 30px;
+    margin: 15px 0px;
+}
+
+#join p, li {
+    font-size: 20px;
+}
+
+#join .part1, .part2, .part3 , .part4 {
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+}
+
+
+
+#join .tilte {
+    margin-top: 60px;
+    font-weight: bold;
+
+}
+
+#join ul li {
+    color: rgba(0, 0, 0, 0.795);
+}
+
+#join .fin-desc {
+    margin-top: 80px;
+    
+}
+
+#join .job-details {
+    margin-top: 60px;
+}
+
+#join .sub-title {
+    margin: 5px;
+    color: rgba(0, 0, 0, 0.733);
+}
+
+
+
+
+#section6 .info-box .myname_p,
+#section6 .info-box .myaddress_p,
+#section6 .info-box .mymail_p {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* the section6 style */pan
+
+form {
+    width: 100%;
+}
+
+#section6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* padding: 50px 50px; */
+    /* border: none; */
+    /* margin-bottom: 50px; */
+    padding-top: 50px;
+    background-color: white;
+    background-color: rgba(173, 216, 230, 0.479);
+
+}
+
+
+#section6 .title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section6 .title-section h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+#section6 .title-section p {
+    font-size: 1.3em;
+    /* color: var(--color); */
+    color: orangered;
+    position: relative;
+    margin: 0px;
+}
+
+#section6 .title-section p::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    left: -30%;
+    bottom: 40%;
+    display: block;
+    background-color: black;
+}
+
+#section6 .title-section p::after {
+    content: '';
+    position: absolute;
+    bottom: 40%;
+    right: -30%;
+    width: 30px;
+    height: 3px;
+    display: block;
+    background-color: black;
+}
+
+#section6 .contact-container {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.322);
+    /* border: 4px solid var(--color); */
+    /* padding: 50px; */
+    /* margin-left: 40px; */
+    margin: 50px;
+    width: 50%;
+    background-color: white;
+}
+
+
+#section6 .info {
+    width: 50%;
+    /* border: 1px solid var(--color); */
+    border-right: none;
+    padding: 50px;
+
+}
+
+#section6 .info .title2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+ 
+#section6 .info .sous-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#section6  .personal-info .info-box {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+ #section6 .info-box .myname,
+#section6 .info-box .myaddress,
+#section6 .info-box .mymail {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+#section6 .box p{
+    margin: 0;
+    margin-top: 5px;
+}
+
+
+
+#section6  .personal-info .info-box .fa-solid {
+     font-size: 1.5em;
+    color: orangered;
+}
+
+
+#section6  .personal-info .info-box .box {
+    padding-left: 30px;
+}
+
+
+#section6 .form-container {
+    width: 50%;
+    border-left: none;
+    padding: 0 5%;
+
+}
+
+
+
+#section6 .form-container .title {
+    font-size: 1.7em;
+    margin-top: 20px;
+}
+/* ////////////////////////////// */
+
+
+#section6 .form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#section6 .form input {
+    /* width: 90%; */
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    color: black;
+    font-size: 18px;
+    padding:0 0 0 7px;
+    width: 98%;
+    margin: 10px 0px;
+
+}
+
+#section6 .form input:focus {
+    outline: none;
+}
+
+
+/* #section6 form .name-email {
+    display: flex;
+    margin: 15px 0;
+}
+
+#section6 form .name-email .name {
+   margin-right: 7px;
+}
+
+#section6 form .name-email .email {
+    margin-left: 7px;
+} */
+
+
+#section6 .form textarea {
+    margin: 15px 0;
+    /* width: 100%; */
+    font-size: 18px;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+#section6 .form textarea:focus {
+    outline: none;
+}
+
+
+#section6 .form .send-message {
+    width: 8em;
+    height: 2em;
+    /* background-color: var(--color); */
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#section6 .form .send-message:hover {
+    /* background-color: rgb(177, 68, 29); */
+    width: 9em;
+    box-shadow: 0 0 15px rgba(255, 68, 0, 0.562);
+}
+/*
+#section6 .name, .email, .object {
+    margin: 0;
+    padding: 0;
+} */
+
+
+
+
+
+@media (max-width: 1550px) {
+    #section6 {
+        height: auto;
+    }
+
+    #section6 .title-section h1 {
+        margin-top: 50px;
+    }
+
+    #section6 .contact-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 30px ;
+    }
+    
+
+    #section6 .contact-container .info {
+        width: 100%;
+        display: flex;
+    }
+
+
+   #section6 .contact-container .title-box {
+       margin-right: 3%;
+       width: 50%;
+   }
+
+   #section6 .contact-container .personal-info {
+      margin-left: 3%;
+   }
+
+   /* #section6 .personal-info .info-box .box {
+    margin: 5px 0;
+   } */
+
+
+
+    #section6 .form-container {
+        width: 100%;
+    }
+
+    #section6 .myaddress, .mymail, .myname {
+        margin: 0;
+    }
+
+
+
+}
+
+
+
+@media (max-width: 960px) {
+   #section6 {
+    padding: 0;
+   }
+
+
+    body.mode #section6 .contact-container {
+        padding: 0;
+    }
+
+
+
+    #section6 .contact-container .info {
+        flex-direction: column;
+        padding: 0;
+        width: 90%;
+    }
+
+    #section6 .contact-container .personal-info {
+        margin-top: 3%;
+     }
+
+    #section6 .form-container .name-email {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section6 .form-container .name-email input {
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    #section6 .contact-container .title-box {
+        margin-right: 3%;
+        width: 100%;
+    }
+
+
+}
+
+
+
+@media (max-width: 380px) {
+    #section6 .contact-container .info {
+        width: 100%;
+    }
+
+    .mymail2 {
+        font-size: 5px;
+    }
+}
+
+
+
+body.mode #section6 {
+    background-color: rgb(61, 61, 61);
+}
+
+
+body.mode #section6 .contact-container {
+    background-color: rgb(43, 43, 43);
+    /* box-shadow: 0 5px 30px rgba(0, 0, 0, 0.568); */
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.205);
+
+    padding: 10px 20px;
+ }
+
+body.mode #section6 input,
+body.mode #section6 textarea {
+    background-color: rgb(59, 59, 59);
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.39) ;
+    color: white;
+}
+
+body.mode #section6 input::placeholder,
+body.mode #section6 textarea::placeholder {
+    color: rgba(255, 255, 255, 0.61);
+}
+
+
+
+input {
+    width: 100%;
+}
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    #join .container {
+        width: 60%;
+    
+    }
+    #section6 .contact-container {
+        width: 65%;
+    }
+}
+
+@media (max-width: 501px) {
+    #join .container {
+        width: 80%;
+    
+    }
+    #section6 .contact-container {
+        width: 80%;
+    }
+}
+
+
+
+@media (max-width: 400px) {
+    #section6 .contact-container {
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.322);
+        /* border: 4px solid var(--color); */
+        /* padding: 50px; */
+        /* margin-left: 40px; */
+        margin: 0px;
+        width: 90%;
+        background-color: white;
+    }
+}
+
+
+
+@media (max-width: 550px) {
+    .mymail2 {
+        transform: translate(-60px, 10px);
+        margin-top: 100px;
+        /* font-size: 90vw; */
+    }
+
+    .form-container {
+        margin-top: 50px;
+    }
+
+}
